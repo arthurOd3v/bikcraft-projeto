@@ -20,12 +20,21 @@ img div {
 
 .bike {
   display: block;
-  width: 100%;
+  max-width: 100%;
 }
 
 .b1 {
-  padding: 60px 40px;
-  display: grid;
+  padding: 50px 40px;
+  display: block;
+  text-align: end;
+  gap: 10px;
+}
+
+.btn {
+  color: white;
+  background: red;
+  padding: 10px 20px;
+  /* justify-self: end; */
 }
 
 .conteudo {
@@ -36,43 +45,48 @@ img div {
   grid-template-columns: 1fr 1fr;
 }
 
-.vantagens {
-  font-size: 60px;
+.vant {
+  display: grid;
+  font-size: 70px;
+  padding: 30px;
   color: #c6c6c6;
   background: #f7f7f7;
-  background-image: url(/img/onda.svg);
   text-align: right;
   align-content: center;
-  /* align-self: center; */
 }
 
-.menu {
+.header {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
   gap: 60px;
 }
 
-.marca {
+.logo {
   display: block;
   margin: 0 auto;
   max-width: 100%;
 }
 
-.flex {
+.menu-flex {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
-.flex a {
+.menu-flex a {
   display: inline-block;
   color: black;
   background: white;
   border-radius: 5px;
   padding: 15px 30px;
   text-transform: uppercase;
+  border: 2px solid transparent;
+}
+
+.menu-flex a:hover {
+  border: solid 2px red;
 }
 
 .title {
@@ -81,16 +95,9 @@ img div {
   position: relative;
 }
 
-.p {
+.texto {
   font-size: 20px;
   text-align: right;
-}
-
-.btn {
-  color: white;
-  background: red;
-  padding: 15px 30px;
-  justify-self: end;
 }
 
 .item {
@@ -118,9 +125,9 @@ img div {
   content: "";
   position: absolute;
   height: 3px;
-  width: 90px;
-  right: -85px;
-  bottom: 80px;
+  width: 70px;
+  right: -75px;
+  bottom: 50px;
   background: red;
 }
 
